@@ -1,0 +1,10 @@
+Set reference MyRef to $cobj
+Calculate MyLow as $cinst.[$cobj.$dataname]
+Calculate MyHigh as $cinst.[$cobj.$userinfo]
+
+JavaScript: $(MyRef.elem).find('#range-value-low').empty().append(MyLow);
+JavaScript: $(MyRef.elem).find('#range-value-high').empty().append(MyHigh);
+JavaScript: $(MyRef.elem).find("#slider-range").slider({values: [MyLow,MyHigh]})
+
+JavaScript: $(MyRef.elem).find('#range-value-low')[0].style.visibility='hidden'
+JavaScript: $(MyRef.elem).find('#range-value-high')[0].style.visibility='hidden'

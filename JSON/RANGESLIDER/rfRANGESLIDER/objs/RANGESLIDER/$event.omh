@@ -1,0 +1,5 @@
+On evSlide
+	JavaScript: MyHigh=pValues[0]
+	JavaScript: MyLow=pValues[1]
+	Calculate $cinst.[$cobj.$dataname] as MyHigh
+	Calculate $cinst.[$cobj.$userinfo] as MyLow

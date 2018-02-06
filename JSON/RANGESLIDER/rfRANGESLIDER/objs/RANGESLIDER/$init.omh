@@ -1,0 +1,13 @@
+Set reference MyRef to $cobj
+JavaScript: $(MyRef.elem).find("#slider-range").slider({
+JavaScript: range: true,
+JavaScript: min: 0,
+JavaScript: max: 100,
+JavaScript: slide: function (event, ui) {
+JavaScript: $(MyRef.elem).find('#range-value-low').empty().append(ui.values[ 0 ]);
+JavaScript: $(MyRef.elem).find('#range-value-high').empty().append(ui.values[ 1 ]);
+JavaScript: __form.clientEvCode='evSlide';MyRef.callMethodEx('$event',0,ui.values);
+JavaScript: }     ;; end slide
+JavaScript: });     ;; end slider
+JavaScript: MyRef.callMethod('$redraw')
+Quit method
